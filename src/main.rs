@@ -3,6 +3,10 @@
 // Q: why is this so over-engineered?
 // A: yes
 //
+// Q: why use a whole *async runtime*, just to send one (1) message?
+// A: cause it's nicer to just use teloxide, than to do url manipulations
+//    yourself and teloxide uses tokio. it's just easier this way.
+//
 // Q: why
 // A: so that I can do `x b && tping`, go do some stuff in another room and
 //    be notified when the build finishes
